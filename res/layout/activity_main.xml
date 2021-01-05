@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/timg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp">
+    <EditText
+        android:id="@+id/et_loginactivity_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:hint="       学号"
+        android:textColorHint="#ffffff"
+        android:drawableLeft="@mipmap/zhang"/>
+    <EditText
+        android:id="@+id/et_loginactivity_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:hint="       密码"
+        android:textColorHint="#ffffff"
+        android:drawableLeft="@mipmap/mi"/>
+    <Button
+        android:id="@+id/bt_loginactivity_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:background="#ff009688"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/bt_loginactivity_wangji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/bt_loginactivity_register"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="190dp"
+        android:text="注册" />
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

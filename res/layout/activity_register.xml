@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/timg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mingrisoft.denglu.RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp">
+        <EditText
+            android:id="@+id/et_registeractivity_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:hint="       学号"
+            android:textColorHint="#ffffff"
+            android:drawableLeft="@mipmap/zhang"/>
+        <EditText
+            android:id="@+id/et_registeractivity_password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:hint="       设置密码"
+            android:textColorHint="#ffffff"
+            android:drawableLeft="@mipmap/mi"/>
+        <EditText
+            android:id="@+id/et_registeractivity_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:hint="       确认密码"
+            android:textColorHint="#ffffff"
+            android:drawableLeft="@mipmap/mi"/>
+        <Button
+            android:id="@+id/bt_registeractivity_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:background="#ff009688"/>
+
+        <Button
+            android:id="@+id/bt_registeractivity_login"
+            android:layout_width="56dp"
+            android:layout_height="36dp"
+            android:background="#7ac5cd"
+            android:text="返回"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>
