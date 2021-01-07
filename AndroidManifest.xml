@@ -19,6 +19,12 @@
         <activity android:name=".PasswordActivity"></activity>
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".LoginafterActivity"></activity>
+        <activity android:name=".MaininterfaceActivity"></activity>
+        <activity android:name=".MassageActivity"></activity>
+        <activity android:name=".ExperimentActivity"></activity>
+        <activity android:name=".ClockActivity"></activity>
+        <activity android:name=".LeavingActivity"></activity>
+        <activity android:name=".SetActivity"></activity>
     </application>
 
 </manifest>

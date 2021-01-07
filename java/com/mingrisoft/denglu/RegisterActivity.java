@@ -96,7 +96,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         Toast.makeText(this, "用户名重复", Toast.LENGTH_SHORT).show();
                     }else{
                         Toast.makeText(this, "用户名可注册", Toast.LENGTH_SHORT).show();
-                        if (match2) {
+                        if (!match2) {
                             mDBOpenHelper.add(username, password2);
                             Intent intent3 = new Intent(RegisterActivity.this, MainActivity.class);
                             startActivity(intent3);

@@ -54,14 +54,14 @@ public class LoginafterActivity extends Activity implements View.OnClickListener
 
         switch (view.getId()) {
             case R.id.back:
-                Intent intent1 = new Intent(LoginafterActivity.this, MainActivity.class);
+                Intent intent1 = new Intent(LoginafterActivity.this, SetActivity.class);
                 startActivities(new Intent[]{intent1});
                 break;
             case R.id.btloginafter_bind:
                // ArrayList<User> list = mDBOpenHelper.getall();
-//                Intent intent = getIntent();
-//                String message = intent.getStringExtra("MESSAGE");
-//                startActivity(intent);
+                Intent intent = getIntent();
+                String message = intent.getStringExtra("MESSAGE");
+                startActivity(intent);
            //     ArrayList<User> user=mDBOpenHelper.getall();
 
 //                boolean match3 = false;
@@ -74,13 +74,13 @@ public class LoginafterActivity extends Activity implements View.OnClickListener
 //                        //用sql（getpassward()）语句直接查，如果
 //                        match3 = false;
 //                    }
-               //     if (!TextUtils.isEmpty(phone)) {
-                      //  DBOpenHelper.addphone1(phone);
-                Intent intent2 = new Intent(LoginafterActivity.this, MainActivity.class);
-                startActivities(new Intent[]{intent2});
-                Toast.makeText(this, "已绑定", Toast.LENGTH_SHORT).show();
-                break;
+                  if (!TextUtils.isEmpty(phone)) {
+                      DBOpenHelper.addphone1(phone);
 
+                      //  startActivities(new Intent[]{intent2});
+                      Toast.makeText(this, "已绑定", Toast.LENGTH_SHORT).show();
+                      break;
+                  }
                 //    } else {
                 //        Toast.makeText(this, "绑定失败", Toast.LENGTH_SHORT).show();
                //     }

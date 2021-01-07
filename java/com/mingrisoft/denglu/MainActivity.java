@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 if (match1&&match2){
                     Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
-                    Intent intent3 = new Intent(MainActivity.this, LoginafterActivity.class);
+                    Intent intent3 = new Intent(MainActivity.this, MaininterfaceActivity.class);
                     startActivities(new Intent[]{intent3});
                     Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
                 }
